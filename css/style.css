@@ -1,0 +1,177 @@
+/* ===== Reset & base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #1f2937;
+  background: #ffffff;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ===== Header ===== */
+.header {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.logo__icon {
+  color: #1fa971;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 36px;
+}
+
+.nav__link {
+  font-size: 15px;
+  color: #374151;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav__link:hover {
+  color: #1fa971;
+}
+
+.nav__link.active {
+  color: #1fa971;
+  font-weight: 600;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__phone {
+  font-weight: 700;
+  font-size: 15px;
+  color: #1f2937;
+  white-space: nowrap;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.btn-primary {
+  background: #1fa971;
+  color: #fff;
+  padding: 12px 24px;
+}
+
+.btn-primary:hover {
+  background: #178a5a;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: #f6f8f7;
+  margin-top: 96px;
+}
+
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 40px 32px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.footer__address {
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.footer__title {
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.footer__links li {
+  margin-bottom: 12px;
+}
+
+.footer__links a {
+  color: #4b5563;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.footer__links a:hover {
+  color: #1fa971;
+}
+
+.footer__hours p {
+  color: #4b5563;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
