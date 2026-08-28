@@ -1,0 +1,113 @@
+/* ===== Doctors page ===== */
+.doctors {
+  padding: 56px 0 40px;
+}
+
+.doctors__title {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.doctors__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.doctor-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 40px 32px;
+  text-align: center;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.doctor-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.doctor-card__photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px dashed #d1d5db;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0 auto 20px;
+  color: #9ca3af;
+  background: #fafafa;
+}
+
+.doctor-card__photo svg {
+  width: 26px;
+  height: 26px;
+  stroke: #b0b6bd;
+}
+
+.doctor-card__photo-label {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.doctor-card__photo-browse {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.doctor-card__photo-browse a {
+  color: #6b7280;
+  text-decoration: underline;
+}
+
+.doctor-card__name {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.doctor-card__specialty {
+  color: #1fa971;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.doctor-card__experience {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.doctor-card__desc {
+  color: #6b7280;
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .doctors__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .doctors__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header__inner {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+}
